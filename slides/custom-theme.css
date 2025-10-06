@@ -1,0 +1,10 @@
+/* custom-theme.css */
+/* @theme custom-theme */
+
+@import 'default';
+
+.inline-images {
+  img {
+    display: inline-block;
+  }
+}
