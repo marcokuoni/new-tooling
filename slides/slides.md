@@ -1,6 +1,11 @@
+Klaro, ich passe nur Rechtschreibung und Design an – Inhalt bleibt gleich. Hier ist die überarbeitete Marp-Datei:
+
+````markdown
 ---
 marp: true
 theme: custom-theme
+paginate: true
+footer: "Mein neues Tooling – dazwischen spielen wir Golf"
 ---
 
 # Mein neues Tooling – dazwischen spielen wir Golf
@@ -21,15 +26,16 @@ theme: custom-theme
 
 ### «ci"», «daw» & Co.: Textobjekte rocken
 
-```
+```text
 1) Cursor im "hello world" → ci"Hi Vim<Esc>
-2) Cursor in (w + h) → da) (löscht die ganze Klammer); danach ggf. daw um das übriggebliebene "+ " zu entfernen
+2) Cursor in (w + h) → da) (löscht die ganze Klammer); danach ggf. daw, um das übriggebliebene "+ " zu entfernen
 3) Cursor in 'app' → ct' /var/www <Esc>
 ```
+````
 
 - `c`, `d`, `v`, `y`
 - `a`, `i`
-- `t` `w` oder explizit `{`, `"`
+- `t`, `w` oder explizit `{`, `"`
 
 ---
 
@@ -37,12 +43,12 @@ theme: custom-theme
 
 ### Pro
 
-- <https://bastardkb.com> komplett Open Source
+- [https://bastardkb.com](https://bastardkb.com) – komplett Open-Source
 - Mehr Möglichkeiten mit dem Daumen
 - Weniger Bewegung, alles erreichbar
 - Klein und handlich
-- Konfigurierbar und überall Einsetzbar
-- VIA (Demo) - Der Weg ist das spielen
+- Konfigurierbar und überall einsetzbar
+- VIA (Demo) – der Weg ist das Ziel
 
 ---
 
@@ -51,7 +57,7 @@ theme: custom-theme
 ### Contra
 
 - Daumentasten
-- USB Buchse
+- USB-Buchse
 - Controller
 - Laptop unterwegs
 
@@ -65,7 +71,7 @@ theme: custom-theme
 
 ### Bewegungen + Operatoren kombinieren
 
-```
+```text
 Idee: Mit Operatoren + Motion arbeiten, z. B. auf Zeilen mit "# Aufgabe" springen und "cW" → "##", oder "I#" etc.
 ```
 
@@ -78,12 +84,12 @@ Idee: Mit Operatoren + Motion arbeiten, z. B. auf Zeilen mit "# Aufgabe" springe
 
 ## FIDO2
 
-- <https://www.token2.swiss/>
+- [https://www.token2.swiss/](https://www.token2.swiss/)
 - Backup
-- Diverse Einsätze (Passwortlos, Zweiter-Faktor, SSH)
-- Key bleibt auf Gerät, kein Phising (Domain, Keys und TLS)
-- Datenschutz (Daten auf Gerät (Biometrisch))
-- LUKS, OS, SSH und diverse Online Kontos
+- Diverse Einsätze (passwortlos, zweiter Faktor, SSH)
+- Key bleibt auf Gerät, kein Phishing (Domain, Keys und TLS)
+- Datenschutz (Daten auf Gerät; biometrisch)
+- LUKS, OS, SSH und diverse Online-Konten
 
 ![width:500px](Fido2_app_architecture.png)
 
@@ -97,13 +103,13 @@ Idee: Mit Operatoren + Motion arbeiten, z. B. auf Zeilen mit "# Aufgabe" springe
 
 ### Visueller Blockmodus zum Spalten-Editieren
 
-```
+```text
 Lösungsidee: gg, Ctrl-v, mit j runter, I, "// TODO: " tippen, <Esc>
 ```
 
-- `gg` `shift+g`
-- `ctrl+v` `j` `j`
-- `I` `*` `esc`
+- `gg`, `Shift+G`
+- `Ctrl+V`, `j`, `j`
+- `I`, `*`, `Esc`
 - `A`, `i`, `a`
 
 ---
@@ -113,11 +119,11 @@ Lösungsidee: gg, Ctrl-v, mit j runter, I, "// TODO: " tippen, <Esc>
 ### Pros
 
 - Deklarativ
-- Reproduzierbar (Echte Encryption)
+- Reproduzierbar (echte Encryption)
 - Atomare Updates & Rollbacks
 - Isolierte Builds
-- Mehrere Versionen Parallel
-- Cross Platform
+- Mehrere Versionen parallel
+- Cross-Platform
 
 ---
 
@@ -127,18 +133,20 @@ Lösungsidee: gg, Ctrl-v, mit j runter, I, "// TODO: " tippen, <Esc>
 
 - Lernkurve
 - Ökosystem
-- Packaging Edge Cases
+- Packaging-Edge-Cases
 - Read-Only
 
 ---
 
 ## Demo
 
-- Reboot (Rollback / Token2)?
-- which openssl
-- nix-shell -p openssl
-- nix develop (flake.nix, shell.nix)
-- configuration.nix (waybar, user)
+```bash
+reboot        # (Rollback / Token2)?
+which openssl
+nix-shell -p openssl
+nix develop   # (flake.nix, shell.nix)
+# configuration.nix (waybar, user)
+```
 
 ---
 
@@ -150,7 +158,7 @@ Lösungsidee: gg, Ctrl-v, mit j runter, I, "// TODO: " tippen, <Esc>
 
 ### Suchen & Ersetzen mit «%s» und «\v»
 
-```
+```vim
 :%s/user_id/userId/g
 :%s/is_active/isActive/g
 ```
@@ -164,10 +172,10 @@ Lösungsidee: gg, Ctrl-v, mit j runter, I, "// TODO: " tippen, <Esc>
 
 ## Vim
 
-- LazyVim (Terminal, File Search, Grep, File Manipulationen, LazyExtras)
-- kitty, ZSH (einfach Esc, ip address und ping [scrollback])
+- LazyVim (Terminal, File Search, Grep, File-Manipulationen, LazyExtras)
+- kitty, ZSH (einfach `Esc`, IP-Adresse und `ping` – Scrollback)
 - Browser
-- Hyprland (Ein ander Mal)
+- Hyprland (ein andermal)
 
 ---
 
@@ -179,7 +187,7 @@ Lösungsidee: gg, Ctrl-v, mit j runter, I, "// TODO: " tippen, <Esc>
 
 ### Makros aufnehmen und abspielen
 
-```
+```text
 Lösungsidee: Cursor auf "apple"
 qa  (Macro a starten)
 A, fruit<Esc>j
@@ -187,22 +195,26 @@ q   (stop)
 2@a (zweimal abspielen)
 ```
 
-- `qa` Makro in a speichern
-- `A` `, text` `esc` `j` (`q` Recording beenden)
-- 2@a zweimal Makro a abspielen
+- `qa` – Makro in `a` speichern
+- `A`, `, text`, `Esc`, `j` (`q` – Recording beenden)
+- `2@a` – zweimal Makro `a` abspielen
 - `.`
 - Register: `"_dw`, `"0p`
-- Springen: `ma`, `a`
-- Undo/Redo `u` `ctrl+r`
+- Springen: `ma`, `'a`
+- Undo/Redo: `u`, `Ctrl+R`
 
 ---
 
-## danke (esc viw shift+u)
+## Danke (Esc → viw → Shift+U)
 
-- Buchtipp: Vim Practical Vim: Edit Text at the Speed of Thought \
+- Buchtipp: _Practical Vim: Edit Text at the Speed of Thought_
   978-1680501278
 
 <!--
 https://marpit.marp.app
- marp slides.md -w --theme-set custom-theme.css
+marp slides.md -w --theme-set custom-theme.css
 -->
+
+```
+
+```
