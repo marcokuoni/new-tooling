@@ -1,6 +1,3 @@
-Klaro, ich passe nur Rechtschreibung und Design an – Inhalt bleibt gleich. Hier ist die überarbeitete Marp-Datei:
-
-````markdown
 ---
 marp: true
 theme: custom-theme
@@ -26,16 +23,15 @@ footer: "Mein neues Tooling – dazwischen spielen wir Golf"
 
 ### «ci"», «daw» & Co.: Textobjekte rocken
 
-```text
-1) Cursor im "hello world" → ci"Hi Vim<Esc>
-2) Cursor in (w + h) → da) (löscht die ganze Klammer); danach ggf. daw, um das übriggebliebene "+ " zu entfernen
-3) Cursor in 'app' → ct' /var/www <Esc>
-```
-````
+1. Cursor im "hello world" → ci"Hi Vim<Esc>
+2. Cursor in (w + h) → da) (löscht die ganze Klammer); danach ggf. daw, um das übriggebliebene "+ " zu entfernen
+3. Cursor in 'app' → ct' /var/www <Esc>
 
+```
 - `c`, `d`, `v`, `y`
 - `a`, `i`
 - `t`, `w` oder explizit `{`, `"`
+```
 
 ---
 
@@ -214,7 +210,3 @@ q   (stop)
 https://marpit.marp.app
 marp slides.md -w --theme-set custom-theme.css
 -->
-
-```
-
-```
