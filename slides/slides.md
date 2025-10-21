@@ -86,6 +86,7 @@ Idee: Mit Operatoren + Motion arbeiten, z. B. auf Zeilen mit "# Aufgabe" springe
 - Key bleibt auf Gerät, kein Phishing (Domain, Keys und TLS)
 - Datenschutz (Daten auf Gerät; biometrisch)
 - LUKS, OS, SSH und diverse Online-Konten
+- Contra: RFID
 
 ![width:500px](Fido2_app_architecture.png)
 
