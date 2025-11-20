@@ -9,9 +9,9 @@ footer: "Mein neues Tooling – dazwischen spielen wir Golf"
 
 - Persönlicher Erfahrungsbericht, nach 3 Monaten!
 - Mehr Tastatur, weniger Maus
-- Sicherheit
+- Mehr Sicherheit und Komfort
 - Reproduzierbarkeit und Dokumentation
-- Gerne eure Erfahrungen und Tipps im Nachgang
+- Gerne eure Erfahrungen und Tipps
 
 ---
 
@@ -88,7 +88,7 @@ Idee: Mit Operatoren + Motion arbeiten, z. B. auf Zeilen mit "# Aufgabe" springe
 - LUKS, OS, SSH und diverse Online-Konten
 - Contra: RFID
 
-![width:500px](Fido2_app_architecture.png)
+![width:300px](Fido2_app_architecture.png)
 
 ---
 
