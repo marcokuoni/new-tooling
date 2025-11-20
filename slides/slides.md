@@ -7,7 +7,7 @@ footer: "Mein neues Tooling – dazwischen spielen wir Golf"
 
 # Mein neues Tooling – dazwischen spielen wir Golf
 
-- Persönlicher Erfahrungsbericht, nach 3 Monaten!
+- Persönlicher Erfahrungsbericht, nach 4 Monaten!
 - Mehr Tastatur, weniger Maus
 - Mehr Sicherheit und Komfort
 - Reproduzierbarkeit und Dokumentation
@@ -86,7 +86,7 @@ Idee: Mit Operatoren + Motion arbeiten, z. B. auf Zeilen mit "# Aufgabe" springe
 - Key bleibt auf Gerät, kein Phishing (Domain, Keys und TLS)
 - Datenschutz (Daten auf Gerät; biometrisch)
 - LUKS, OS, SSH und diverse Online-Konten
-- Contra: RFID
+- Contra: RFID, Hardware
 
 ![width:300px](Fido2_app_architecture.png)
 
